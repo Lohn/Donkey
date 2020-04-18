@@ -13,7 +13,7 @@ Swoole\Network\Server::start(function ($opt)
     $logger = new Swoole\Log\FileLog(['file' => getRunPath() . '/logs/center.log']);
     $AppSvr = new Lib\CenterServer;
     $AppSvr->setLogger($logger);
-
+//121212121
     $setting = array(
         'worker_num' => WORKER_NUM,
         'task_worker_num'=>TASK_NUM,
