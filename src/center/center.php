@@ -7,7 +7,6 @@
  */
 
 require_once __DIR__ . '/_init.php';
-//测试测试1212
 Swoole\Network\Server::setPidFile(getRunPath() . '/logs/center.pid');
 
 Swoole\Network\Server::start(function ($opt)
