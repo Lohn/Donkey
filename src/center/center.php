@@ -7,7 +7,7 @@
  */
 
 require_once __DIR__ . '/_init.php';
-Swoole\Network\Server::setPidFile(getRunPath() . '/logs/center.pid')
+Swoole\Network\Server::setPidFile(getRunPath() . '/logs/center.pid');
 Swoole\Network\Server::start(function ($opt)
 {
     $logger = new Swoole\Log\FileLog(['file' => getRunPath() . '/logs/center.log']);
